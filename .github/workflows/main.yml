@@ -21,7 +21,7 @@ jobs:
 
       - name: Build application
         run: |
-          echo "Building application..."
+          source venv/bin/activate
           python app.py
 
   test:
