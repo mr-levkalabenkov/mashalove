@@ -22,7 +22,7 @@ jobs:
       - name: Build application
         run: |
           source venv/bin/activate
-          python app.py
+          nohup python app.py &
 
   test:
     runs-on: ubuntu-latest
